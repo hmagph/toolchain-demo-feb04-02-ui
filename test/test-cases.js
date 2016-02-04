@@ -3,7 +3,8 @@ require('colors');
 var _ = require("lodash");
 var chai = require("chai");
 var chaiAsPromised = require("chai-as-promised");
-var url = "https://nodejs.org";//process.env.APP_URL;
+//var url = "https://nodejs.org";//process.env.APP_URL;
+var url = process.env.APP_URL;
 
 chai.use(chaiAsPromised);
 chai.should();
